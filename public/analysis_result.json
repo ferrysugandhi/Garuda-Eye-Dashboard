@@ -1,0 +1,112 @@
+{
+  "summary_metrics": {
+    "detected_networks": 3,
+    "high_risk_accounts": 2185,
+    "potential_loss_prevented": "78 Miliar",
+    "analysis_timestamp": "2025-01-23T14:30:00Z"
+  },
+  "nodes": [
+    {
+      "id": "ACC001234",
+      "label": "...xxxx1234",
+      "role": "Bandar Utama",
+      "risk_score": 98,
+      "total_in": "4200000000",
+      "total_out": "3800000000",
+      "suspicious_connections": 512,
+      "position": { "x": 400, "y": 200 }
+    },
+    {
+      "id": "ACC005678",
+      "label": "...xxxx5678",
+      "role": "Mule/Pengepul",
+      "risk_score": 85,
+      "total_in": "850000000",
+      "total_out": "820000000",
+      "suspicious_connections": 23,
+      "position": { "x": 200, "y": 100 }
+    },
+    {
+      "id": "ACC009012",
+      "label": "...xxxx9012",
+      "role": "Mule/Pengepul",
+      "risk_score": 78,
+      "total_in": "650000000",
+      "total_out": "630000000",
+      "suspicious_connections": 18,
+      "position": { "x": 600, "y": 150 }
+    },
+    {
+      "id": "ACC003456",
+      "label": "...xxxx3456",
+      "role": "Normal",
+      "risk_score": 45,
+      "total_in": "120000000",
+      "total_out": "115000000",
+      "suspicious_connections": 2,
+      "position": { "x": 300, "y": 350 }
+    },
+    {
+      "id": "ACC007890",
+      "label": "...xxxx7890",
+      "role": "Normal",
+      "risk_score": 32,
+      "total_in": "95000000",
+      "total_out": "92000000",
+      "suspicious_connections": 1,
+      "position": { "x": 500, "y": 320 }
+    },
+    {
+      "id": "ACC001111",
+      "label": "...xxxx1111",
+      "role": "Mule/Pengepul",
+      "risk_score": 82,
+      "total_in": "720000000",
+      "total_out": "700000000",
+      "suspicious_connections": 15,
+      "position": { "x": 150, "y": 280 }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "ACC005678",
+      "target": "ACC001234",
+      "amount": "2100000000",
+      "timestamp": "14:32",
+      "type": "Transfer"
+    },
+    {
+      "id": "e2",
+      "source": "ACC009012",
+      "target": "ACC001234",
+      "amount": "850000000",
+      "timestamp": "14:28",
+      "type": "Deposit"
+    },
+    {
+      "id": "e3",
+      "source": "ACC001234",
+      "target": "ACC003456",
+      "amount": "1300000000",
+      "timestamp": "14:15",
+      "type": "Transfer"
+    },
+    {
+      "id": "e4",
+      "source": "ACC001111",
+      "target": "ACC001234",
+      "amount": "680000000",
+      "timestamp": "13:45",
+      "type": "Transfer"
+    },
+    {
+      "id": "e5",
+      "source": "ACC007890",
+      "target": "ACC003456",
+      "amount": "95000000",
+      "timestamp": "13:20",
+      "type": "Transfer"
+    }
+  ]
+}
