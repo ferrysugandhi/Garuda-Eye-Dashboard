@@ -14,6 +14,7 @@ import {
   Position,
 } from "@xyflow/react"
 import "@xyflow/react/dist/style.css"
+import { Badge } from "@/components/ui/badge"
 
 interface CustomNodeData {
   id: string
@@ -31,14 +32,13 @@ interface NetworkGraphProps {
   onNodeClick: (node: any) => void
 }
 
-// Custom Node Component with role-based styling
 const CustomNode: React.FC<NodeProps<CustomNodeData>> = ({ data, selected }) => {
-  const getNodeStyle = (role: string) => {
-    let backgroundColor = "#3b82f6" // blue for Normal
+  const getNodeStyle = (role: string, riskScore: number) => {
+    let backgroundColor = "#3b82f6" // blue for normal
     let size = 60
 
     if (role === "Bandar Utama") {
-      backgroundColor = "#ef4444" // red and larger
+      backgroundColor = "#ef4444" // red
       size = 80
     } else if (role === "Mule/Pengepul") {
       backgroundColor = "#f97316" // orange
@@ -63,11 +63,20 @@ const CustomNode: React.FC<NodeProps<CustomNodeData>> = ({ data, selected }) => 
     }
   }
 
+  const getRoleBadgeColor = (role: string) => {
+    if (role === "Bandar Utama") return "bg-red-600"
+    if (role === "Mule/Pengepul") return "bg-orange-600"
+    return "bg-blue-600"
+  }
+
   return (
-    <div>
+    <div className="relative">
       <Handle type="target" position={Position.Top} />
-      <div style={getNodeStyle(data.role)}>{data.label}</div>
+      <div style={getNodeStyle(data.role, data.risk_score)}>{data.label}</div>
       <Handle type="source" position={Position.Bottom} />
+      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+        <Badge className={`text-xs ${getRoleBadgeColor(data.role)} text-white`}>{data.role}</Badge>
+      </div>
     </div>
   )
 }
@@ -77,7 +86,6 @@ const nodeTypes = {
 }
 
 export function NetworkGraph({ nodes, edges, onNodeClick }: NetworkGraphProps) {
-  // Convert nodes to React Flow format
   const reactFlowNodes: Node[] = useMemo(
     () =>
       nodes.map((node) => ({
@@ -89,7 +97,6 @@ export function NetworkGraph({ nodes, edges, onNodeClick }: NetworkGraphProps) {
     [nodes],
   )
 
-  // Convert edges to React Flow format
   const reactFlowEdges: Edge[] = useMemo(
     () =>
       edges.map((edge) => ({
@@ -111,7 +118,6 @@ export function NetworkGraph({ nodes, edges, onNodeClick }: NetworkGraphProps) {
     [edges],
   )
 
-  // Handle node clicks and pass data back to parent
   const onNodeClickHandler = useCallback(
     (event: React.MouseEvent, node: Node) => {
       onNodeClick(node.data)

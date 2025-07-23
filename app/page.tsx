@@ -23,41 +23,33 @@ interface AnalysisData {
 }
 
 export default function GarudaEyeDashboard() {
-  // Step 1: State Management with React hooks
   const [isLoading, setIsLoading] = useState(false)
   const [analysisData, setAnalysisData] = useState<AnalysisData | null>(null)
   const [selectedNode, setSelectedNode] = useState<any>(null)
 
-  // Step 2: Implement the "Run Analysis" Workflow
   const handleRunAnalysis = async () => {
-    // a. Set isLoading to true
     setIsLoading(true)
     setAnalysisData(null)
     setSelectedNode(null)
 
-    // b. Use setTimeout to wait for 2 seconds to simulate processing time
+    // Simulate processing time
     setTimeout(async () => {
       try {
-        // c. Use fetch('/analysis_result.json') to load the data
         const response = await fetch("/analysis_result.json")
-        // d. Parse the JSON response and store it in the analysisData state
         const data = await response.json()
         setAnalysisData(data)
       } catch (error) {
         console.error("Failed to load analysis data:", error)
       } finally {
-        // e. Set isLoading to false
         setIsLoading(false)
       }
     }, 2000)
   }
 
-  // Step 4: Handle node clicks from the network graph
   const handleNodeClick = (nodeData: any) => {
     setSelectedNode(nodeData)
   }
 
-  // Helper functions for Step 4: Dynamic Investigation Panel
   const formatCurrency = (amount: string) => {
     const num = Number.parseInt(amount)
     if (num >= 1000000000) {
@@ -68,13 +60,11 @@ export default function GarudaEyeDashboard() {
     return `Rp ${num.toLocaleString()}`
   }
 
-  // Step 4: Filter transactions connected to selectedNode.id
   const getRelatedTransactions = (nodeId: string) => {
     if (!analysisData) return []
     return analysisData.edges.filter((edge) => edge.source === nodeId || edge.target === nodeId).slice(0, 3)
   }
 
-  // Step 5: Helper functions for AI Insight Summary
   const getBandarUtamaNode = () => {
     if (!analysisData) return null
     return analysisData.nodes.find((node) => node.role === "Bandar Utama")
@@ -88,7 +78,7 @@ export default function GarudaEyeDashboard() {
   return (
     <div className="min-h-screen bg-gray-900 text-white font-inter">
       <div className="container mx-auto p-6 space-y-6">
-        {/* Section 1: Header with functional Run Analysis button */}
+        {/* Section 1: Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           <h1 className="text-3xl lg:text-4xl font-bold text-white">Garuda Eye Intelligence Dashboard</h1>
           <div className="flex items-center gap-3">
@@ -113,10 +103,10 @@ export default function GarudaEyeDashboard() {
           </div>
         </div>
 
-        {/* Step 2: KPI Cards with Loading State using Skeleton components */}
+        {/* Section 2: KPI Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {isLoading ? (
-            // Loading skeletons while isLoading is true
+            // Loading skeletons
             Array.from({ length: 3 }).map((_, index) => (
               <Card key={index} className="bg-gray-800 border-gray-700">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -129,7 +119,7 @@ export default function GarudaEyeDashboard() {
               </Card>
             ))
           ) : analysisData ? (
-            // KPI Cards visible when analysisData is not null and isLoading is false
+            // Actual KPI cards with data
             <>
               <Card className="bg-gray-800 border-gray-700">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -168,7 +158,7 @@ export default function GarudaEyeDashboard() {
               </Card>
             </>
           ) : (
-            // Empty state before analysis
+            // Empty state
             Array.from({ length: 3 }).map((_, index) => (
               <Card key={index} className="bg-gray-800 border-gray-700 opacity-50">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -183,7 +173,7 @@ export default function GarudaEyeDashboard() {
           )}
         </div>
 
-        {/* Step 5: AI Intelligence Summary Card */}
+        {/* AI Intelligence Summary Card */}
         {analysisData && !isLoading && (
           <Card className="bg-gray-800 border-gray-700">
             <CardHeader>
@@ -216,7 +206,6 @@ export default function GarudaEyeDashboard() {
               </CardHeader>
               <CardContent className="h-full p-2">
                 {isLoading ? (
-                  // Step 2: Replace Graph Visualization with Skeleton during loading
                   <div className="w-full h-full flex items-center justify-center bg-gray-900 rounded-lg">
                     <div className="space-y-4 w-full max-w-md">
                       <Skeleton className="h-8 w-48 bg-gray-700 mx-auto" />
@@ -229,7 +218,6 @@ export default function GarudaEyeDashboard() {
                     </div>
                   </div>
                 ) : analysisData ? (
-                  // Step 3: Live React Flow component with nodes, edges, and onNodeClick
                   <NetworkGraph nodes={analysisData.nodes} edges={analysisData.edges} onNodeClick={handleNodeClick} />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-gray-900 rounded-lg">
@@ -243,7 +231,7 @@ export default function GarudaEyeDashboard() {
             </Card>
           </div>
 
-          {/* Step 4: Dynamic Investigation Panel */}
+          {/* Right Column: Investigation Panel (30%) */}
           <div className="lg:col-span-3">
             <Card className="bg-gray-800 border-gray-700 h-[600px]">
               <CardHeader>
@@ -251,18 +239,15 @@ export default function GarudaEyeDashboard() {
               </CardHeader>
               <CardContent className="space-y-6">
                 {!selectedNode ? (
-                  // Display message when selectedNode is null
                   <div className="flex flex-col items-center justify-center h-full text-center text-gray-400">
                     <Users className="h-16 w-16 mb-4 opacity-50" />
-                    <p>Click an account on the map to see details.</p>
+                    <p>Klik akun pada peta untuk melihat detail</p>
                   </div>
                 ) : (
-                  // Dynamic content when selectedNode has data
                   <>
-                    {/* Account ID: selectedNode.id */}
+                    {/* Account Header */}
                     <div className="flex items-center gap-3">
                       <span className="text-white font-mono">{selectedNode.label}</span>
-                      {/* Role Badge: color and text based on selectedNode.role */}
                       <Badge
                         variant="destructive"
                         className={`text-white ${
@@ -277,7 +262,7 @@ export default function GarudaEyeDashboard() {
                       </Badge>
                     </div>
 
-                    {/* Risk Score Progress Bar: value = selectedNode.risk_score, red if > 90 */}
+                    {/* Risk Score Section */}
                     <div className="space-y-2">
                       <h3 className="text-sm font-medium text-gray-400">Skor Risiko (AI Confidence)</h3>
                       <Progress
@@ -291,7 +276,7 @@ export default function GarudaEyeDashboard() {
                       </div>
                     </div>
 
-                    {/* Key Stats: selectedNode.total_in, selectedNode.total_out, etc. */}
+                    {/* Key Stats */}
                     <div className="space-y-3">
                       <div className="text-sm">
                         <span className="text-gray-400">Total Dana Masuk (24 Jam):</span>
@@ -305,7 +290,7 @@ export default function GarudaEyeDashboard() {
                       </div>
                     </div>
 
-                    {/* Transaction Table: filtered analysisData.edges connected to selectedNode.id */}
+                    {/* Transaction History Table */}
                     <div className="space-y-2">
                       <h3 className="text-sm font-medium text-gray-400">Riwayat Transaksi Terbaru</h3>
                       <div className="rounded-md border border-gray-700">
@@ -338,6 +323,7 @@ export default function GarudaEyeDashboard() {
                       </div>
                     </div>
 
+                    {/* Action Button */}
                     <Button
                       variant="outline"
                       className="w-full bg-transparent border-gray-600 text-white hover:bg-gray-700"
