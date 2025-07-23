@@ -1,8 +1,8 @@
 {
   "summary_metrics": {
     "detected_networks": 3,
-    "high_risk_accounts": 2185,
-    "potential_loss_prevented": "78 Miliar",
+    "high_risk_accounts": 12847,
+    "potential_loss_prevented": "4.2 Triliun",
     "analysis_timestamp": "2025-01-23T14:30:00Z"
   },
   "nodes": [
@@ -11,60 +11,550 @@
       "label": "...xxxx1234",
       "role": "Bandar Utama",
       "risk_score": 98,
-      "total_in": "4200000000",
-      "total_out": "3800000000",
-      "suspicious_connections": 512,
-      "position": { "x": 400, "y": 200 }
+      "total_in": "125000000000",
+      "total_out": "118000000000",
+      "suspicious_connections": 2847,
+      "position": { "x": 600, "y": 300 }
+    },
+    {
+      "id": "ACC009999",
+      "label": "...xxxx9999",
+      "role": "Bandar Utama",
+      "risk_score": 96,
+      "total_in": "98000000000",
+      "total_out": "92000000000",
+      "suspicious_connections": 2234,
+      "position": { "x": 200, "y": 400 }
+    },
+    {
+      "id": "ACC007777",
+      "label": "...xxxx7777",
+      "role": "Bandar Utama",
+      "risk_score": 94,
+      "total_in": "87000000000",
+      "total_out": "82000000000",
+      "suspicious_connections": 1967,
+      "position": { "x": 1000, "y": 350 }
     },
     {
       "id": "ACC005678",
       "label": "...xxxx5678",
       "role": "Mule/Pengepul",
       "risk_score": 85,
-      "total_in": "850000000",
-      "total_out": "820000000",
-      "suspicious_connections": 23,
-      "position": { "x": 200, "y": 100 }
+      "total_in": "8500000000",
+      "total_out": "8200000000",
+      "suspicious_connections": 145,
+      "position": { "x": 400, "y": 200 }
     },
     {
       "id": "ACC009012",
       "label": "...xxxx9012",
       "role": "Mule/Pengepul",
-      "risk_score": 78,
-      "total_in": "650000000",
-      "total_out": "630000000",
-      "suspicious_connections": 18,
-      "position": { "x": 600, "y": 150 }
-    },
-    {
-      "id": "ACC003456",
-      "label": "...xxxx3456",
-      "role": "Normal",
-      "risk_score": 45,
-      "total_in": "120000000",
-      "total_out": "115000000",
-      "suspicious_connections": 2,
-      "position": { "x": 300, "y": 350 }
-    },
-    {
-      "id": "ACC007890",
-      "label": "...xxxx7890",
-      "role": "Normal",
-      "risk_score": 32,
-      "total_in": "95000000",
-      "total_out": "92000000",
-      "suspicious_connections": 1,
-      "position": { "x": 500, "y": 320 }
+      "risk_score": 83,
+      "total_in": "7800000000",
+      "total_out": "7500000000",
+      "suspicious_connections": 138,
+      "position": { "x": 800, "y": 150 }
     },
     {
       "id": "ACC001111",
       "label": "...xxxx1111",
       "role": "Mule/Pengepul",
       "risk_score": 82,
-      "total_in": "720000000",
-      "total_out": "700000000",
-      "suspicious_connections": 15,
-      "position": { "x": 150, "y": 280 }
+      "total_in": "7200000000",
+      "total_out": "7000000000",
+      "suspicious_connections": 142,
+      "position": { "x": 150, "y": 250 }
+    },
+    {
+      "id": "ACC002222",
+      "label": "...xxxx2222",
+      "role": "Mule/Pengepul",
+      "risk_score": 81,
+      "total_in": "6900000000",
+      "total_out": "6700000000",
+      "suspicious_connections": 135,
+      "position": { "x": 950, "y": 200 }
+    },
+    {
+      "id": "ACC004444",
+      "label": "...xxxx4444",
+      "role": "Mule/Pengepul",
+      "risk_score": 80,
+      "total_in": "6500000000",
+      "total_out": "6300000000",
+      "suspicious_connections": 141,
+      "position": { "x": 300, "y": 100 }
+    },
+    {
+      "id": "ACC006666",
+      "label": "...xxxx6666",
+      "role": "Mule/Pengepul",
+      "risk_score": 79,
+      "total_in": "6200000000",
+      "total_out": "6000000000",
+      "suspicious_connections": 126,
+      "position": { "x": 700, "y": 450 }
+    },
+    {
+      "id": "ACC008888",
+      "label": "...xxxx8888",
+      "role": "Mule/Pengepul",
+      "risk_score": 78,
+      "total_in": "5900000000",
+      "total_out": "5700000000",
+      "suspicious_connections": 129,
+      "position": { "x": 100, "y": 500 }
+    },
+    {
+      "id": "ACC001010",
+      "label": "...xxxx1010",
+      "role": "Mule/Pengepul",
+      "risk_score": 77,
+      "total_in": "5600000000",
+      "total_out": "5400000000",
+      "suspicious_connections": 118,
+      "position": { "x": 1100, "y": 150 }
+    },
+    {
+      "id": "ACC002020",
+      "label": "...xxxx2020",
+      "role": "Mule/Pengepul",
+      "risk_score": 76,
+      "total_in": "5300000000",
+      "total_out": "5100000000",
+      "suspicious_connections": 115,
+      "position": { "x": 250, "y": 550 }
+    },
+    {
+      "id": "ACC003030",
+      "label": "...xxxx3030",
+      "role": "Mule/Pengepul",
+      "risk_score": 75,
+      "total_in": "5000000000",
+      "total_out": "4800000000",
+      "suspicious_connections": 112,
+      "position": { "x": 850, "y": 550 }
+    },
+    {
+      "id": "ACC004040",
+      "label": "...xxxx4040",
+      "role": "Mule/Pengepul",
+      "risk_score": 74,
+      "total_in": "4700000000",
+      "total_out": "4500000000",
+      "suspicious_connections": 108,
+      "position": { "x": 450, "y": 50 }
+    },
+    {
+      "id": "ACC005050",
+      "label": "...xxxx5050",
+      "role": "Mule/Pengepul",
+      "risk_score": 73,
+      "total_in": "4400000000",
+      "total_out": "4200000000",
+      "suspicious_connections": 105,
+      "position": { "x": 650, "y": 600 }
+    },
+    {
+      "id": "ACC006060",
+      "label": "...xxxx6060",
+      "role": "Mule/Pengepul",
+      "risk_score": 72,
+      "total_in": "4100000000",
+      "total_out": "3900000000",
+      "suspicious_connections": 102,
+      "position": { "x": 50, "y": 350 }
+    },
+    {
+      "id": "ACC007070",
+      "label": "...xxxx7070",
+      "role": "Mule/Pengepul",
+      "risk_score": 71,
+      "total_in": "3800000000",
+      "total_out": "3600000000",
+      "suspicious_connections": 98,
+      "position": { "x": 1150, "y": 300 }
+    },
+    {
+      "id": "ACC008080",
+      "label": "...xxxx8080",
+      "role": "Mule/Pengepul",
+      "risk_score": 70,
+      "total_in": "3500000000",
+      "total_out": "3300000000",
+      "suspicious_connections": 95,
+      "position": { "x": 350, "y": 650 }
+    },
+    {
+      "id": "ACC009090",
+      "label": "...xxxx9090",
+      "role": "Mule/Pengepul",
+      "risk_score": 69,
+      "total_in": "3200000000",
+      "total_out": "3000000000",
+      "suspicious_connections": 92,
+      "position": { "x": 750, "y": 50 }
+    },
+    {
+      "id": "ACC001122",
+      "label": "...xxxx1122",
+      "role": "Mule/Pengepul",
+      "risk_score": 68,
+      "total_in": "2900000000",
+      "total_out": "2700000000",
+      "suspicious_connections": 89,
+      "position": { "x": 150, "y": 600 }
+    },
+    {
+      "id": "ACC002233",
+      "label": "...xxxx2233",
+      "role": "Mule/Pengepul",
+      "risk_score": 67,
+      "total_in": "2600000000",
+      "total_out": "2400000000",
+      "suspicious_connections": 86,
+      "position": { "x": 1050, "y": 500 }
+    },
+    {
+      "id": "ACC003344",
+      "label": "...xxxx3344",
+      "role": "Mule/Pengepul",
+      "risk_score": 66,
+      "total_in": "2300000000",
+      "total_out": "2100000000",
+      "suspicious_connections": 83,
+      "position": { "x": 500, "y": 700 }
+    },
+    {
+      "id": "ACC004455",
+      "label": "...xxxx4455",
+      "role": "Mule/Pengepul",
+      "risk_score": 65,
+      "total_in": "2000000000",
+      "total_out": "1800000000",
+      "suspicious_connections": 80,
+      "position": { "x": 900, "y": 100 }
+    },
+    {
+      "id": "ACC005566",
+      "label": "...xxxx5566",
+      "role": "Mule/Pengepul",
+      "risk_score": 64,
+      "total_in": "1700000000",
+      "total_out": "1500000000",
+      "suspicious_connections": 77,
+      "position": { "x": 200, "y": 700 }
+    },
+    {
+      "id": "ACC006677",
+      "label": "...xxxx6677",
+      "role": "Mule/Pengepul",
+      "risk_score": 63,
+      "total_in": "1400000000",
+      "total_out": "1200000000",
+      "suspicious_connections": 74,
+      "position": { "x": 800, "y": 700 }
+    },
+    {
+      "id": "ACC007788",
+      "label": "...xxxx7788",
+      "role": "Mule/Pengepul",
+      "risk_score": 62,
+      "total_in": "1100000000",
+      "total_out": "900000000",
+      "suspicious_connections": 71,
+      "position": { "x": 50, "y": 100 }
+    },
+    {
+      "id": "ACC008899",
+      "label": "...xxxx8899",
+      "role": "Mule/Pengepul",
+      "risk_score": 61,
+      "total_in": "800000000",
+      "total_out": "600000000",
+      "suspicious_connections": 68,
+      "position": { "x": 1200, "y": 400 }
+    },
+    {
+      "id": "ACC009900",
+      "label": "...xxxx9900",
+      "role": "Mule/Pengepul",
+      "risk_score": 60,
+      "total_in": "500000000",
+      "total_out": "300000000",
+      "suspicious_connections": 65,
+      "position": { "x": 400, "y": 750 }
+    },
+    {
+      "id": "ACC001001",
+      "label": "...xxxx1001",
+      "role": "Normal",
+      "risk_score": 45,
+      "total_in": "320000000",
+      "total_out": "315000000",
+      "suspicious_connections": 3,
+      "position": { "x": 300, "y": 350 }
+    },
+    {
+      "id": "ACC002002",
+      "label": "...xxxx2002",
+      "role": "Normal",
+      "risk_score": 32,
+      "total_in": "195000000",
+      "total_out": "192000000",
+      "suspicious_connections": 2,
+      "position": { "x": 500, "y": 320 }
+    },
+    {
+      "id": "ACC003003",
+      "label": "...xxxx3003",
+      "role": "Normal",
+      "risk_score": 38,
+      "total_in": "280000000",
+      "total_out": "275000000",
+      "suspicious_connections": 2,
+      "position": { "x": 450, "y": 500 }
+    },
+    {
+      "id": "ACC004004",
+      "label": "...xxxx4004",
+      "role": "Normal",
+      "risk_score": 41,
+      "total_in": "350000000",
+      "total_out": "345000000",
+      "suspicious_connections": 3,
+      "position": { "x": 650, "y": 250 }
+    },
+    {
+      "id": "ACC005005",
+      "label": "...xxxx5005",
+      "role": "Normal",
+      "risk_score": 29,
+      "total_in": "180000000",
+      "total_out": "178000000",
+      "suspicious_connections": 1,
+      "position": { "x": 750, "y": 500 }
+    },
+    {
+      "id": "ACC006006",
+      "label": "...xxxx6006",
+      "role": "Normal",
+      "risk_score": 35,
+      "total_in": "240000000",
+      "total_out": "238000000",
+      "suspicious_connections": 2,
+      "position": { "x": 100, "y": 400 }
+    },
+    {
+      "id": "ACC007007",
+      "label": "...xxxx7007",
+      "role": "Normal",
+      "risk_score": 43,
+      "total_in": "380000000",
+      "total_out": "375000000",
+      "suspicious_connections": 3,
+      "position": { "x": 850, "y": 450 }
+    },
+    {
+      "id": "ACC008008",
+      "label": "...xxxx8008",
+      "role": "Normal",
+      "risk_score": 31,
+      "total_in": "210000000",
+      "total_out": "208000000",
+      "suspicious_connections": 1,
+      "position": { "x": 550, "y": 450 }
+    },
+    {
+      "id": "ACC009009",
+      "label": "...xxxx9009",
+      "role": "Normal",
+      "risk_score": 36,
+      "total_in": "260000000",
+      "total_out": "258000000",
+      "suspicious_connections": 2,
+      "position": { "x": 200, "y": 500 }
+    },
+    {
+      "id": "ACC001100",
+      "label": "...xxxx1100",
+      "role": "Normal",
+      "risk_score": 39,
+      "total_in": "290000000",
+      "total_out": "288000000",
+      "suspicious_connections": 2,
+      "position": { "x": 950, "y": 250 }
+    },
+    {
+      "id": "ACC002200",
+      "label": "...xxxx2200",
+      "role": "Normal",
+      "risk_score": 33,
+      "total_in": "220000000",
+      "total_out": "218000000",
+      "suspicious_connections": 1,
+      "position": { "x": 400, "y": 550 }
+    },
+    {
+      "id": "ACC003300",
+      "label": "...xxxx3300",
+      "role": "Normal",
+      "risk_score": 42,
+      "total_in": "340000000",
+      "total_out": "338000000",
+      "suspicious_connections": 3,
+      "position": { "x": 700, "y": 100 }
+    },
+    {
+      "id": "ACC004400",
+      "label": "...xxxx4400",
+      "role": "Normal",
+      "risk_score": 28,
+      "total_in": "170000000",
+      "total_out": "168000000",
+      "suspicious_connections": 1,
+      "position": { "x": 50, "y": 200 }
+    },
+    {
+      "id": "ACC005500",
+      "label": "...xxxx5500",
+      "role": "Normal",
+      "risk_score": 37,
+      "total_in": "270000000",
+      "total_out": "268000000",
+      "suspicious_connections": 2,
+      "position": { "x": 1050, "y": 200 }
+    },
+    {
+      "id": "ACC006600",
+      "label": "...xxxx6600",
+      "role": "Normal",
+      "risk_score": 40,
+      "total_in": "310000000",
+      "total_out": "308000000",
+      "suspicious_connections": 2,
+      "position": { "x": 600, "y": 550 }
+    },
+    {
+      "id": "ACC007700",
+      "label": "...xxxx7700",
+      "role": "Normal",
+      "risk_score": 34,
+      "total_in": "230000000",
+      "total_out": "228000000",
+      "suspicious_connections": 2,
+      "position": { "x": 150, "y": 150 }
+    },
+    {
+      "id": "ACC008800",
+      "label": "...xxxx8800",
+      "role": "Normal",
+      "risk_score": 46,
+      "total_in": "390000000",
+      "total_out": "385000000",
+      "suspicious_connections": 3,
+      "position": { "x": 900, "y": 350 }
+    },
+    {
+      "id": "ACC009911",
+      "label": "...xxxx9911",
+      "role": "Normal",
+      "risk_score": 30,
+      "total_in": "200000000",
+      "total_out": "198000000",
+      "suspicious_connections": 1,
+      "position": { "x": 250, "y": 450 }
+    },
+    {
+      "id": "ACC001212",
+      "label": "...xxxx1212",
+      "role": "Normal",
+      "risk_score": 44,
+      "total_in": "360000000",
+      "total_out": "355000000",
+      "suspicious_connections": 3,
+      "position": { "x": 750, "y": 350 }
+    },
+    {
+      "id": "ACC002323",
+      "label": "...xxxx2323",
+      "role": "Normal",
+      "risk_score": 27,
+      "total_in": "160000000",
+      "total_out": "158000000",
+      "suspicious_connections": 1,
+      "position": { "x": 350, "y": 150 }
+    },
+    {
+      "id": "ACC003434",
+      "label": "...xxxx3434",
+      "role": "Normal",
+      "risk_score": 48,
+      "total_in": "410000000",
+      "total_out": "405000000",
+      "suspicious_connections": 4,
+      "position": { "x": 1100, "y": 350 }
+    },
+    {
+      "id": "ACC004545",
+      "label": "...xxxx4545",
+      "role": "Normal",
+      "risk_score": 26,
+      "total_in": "150000000",
+      "total_out": "148000000",
+      "suspicious_connections": 1,
+      "position": { "x": 450, "y": 650 }
+    },
+    {
+      "id": "ACC005656",
+      "label": "...xxxx5656",
+      "role": "Normal",
+      "risk_score": 49,
+      "total_in": "420000000",
+      "total_out": "415000000",
+      "suspicious_connections": 4,
+      "position": { "x": 650, "y": 150 }
+    },
+    {
+      "id": "ACC006767",
+      "label": "...xxxx6767",
+      "role": "Normal",
+      "risk_score": 25,
+      "total_in": "140000000",
+      "total_out": "138000000",
+      "suspicious_connections": 1,
+      "position": { "x": 150, "y": 650 }
+    },
+    {
+      "id": "ACC007878",
+      "label": "...xxxx7878",
+      "role": "Normal",
+      "risk_score": 47,
+      "total_in": "400000000",
+      "total_out": "395000000",
+      "suspicious_connections": 3,
+      "position": { "x": 950, "y": 450 }
+    },
+    {
+      "id": "ACC008989",
+      "label": "...xxxx8989",
+      "role": "Normal",
+      "risk_score": 24,
+      "total_in": "130000000",
+      "total_out": "128000000",
+      "suspicious_connections": 1,
+      "position": { "x": 550, "y": 150 }
+    },
+    {
+      "id": "ACC009090N",
+      "label": "...xxxx9090",
+      "role": "Normal",
+      "risk_score": 50,
+      "total_in": "430000000",
+      "total_out": "425000000",
+      "suspicious_connections": 4,
+      "position": { "x": 250, "y": 650 }
     }
   ],
   "edges": [
@@ -72,7 +562,7 @@
       "id": "e1",
       "source": "ACC005678",
       "target": "ACC001234",
-      "amount": "2100000000",
+      "amount": "8200000000",
       "timestamp": "14:32",
       "type": "Transfer"
     },
@@ -80,32 +570,392 @@
       "id": "e2",
       "source": "ACC009012",
       "target": "ACC001234",
-      "amount": "850000000",
+      "amount": "7500000000",
       "timestamp": "14:28",
       "type": "Deposit"
     },
     {
       "id": "e3",
-      "source": "ACC001234",
-      "target": "ACC003456",
-      "amount": "1300000000",
+      "source": "ACC001111",
+      "target": "ACC009999",
+      "amount": "7000000000",
       "timestamp": "14:15",
       "type": "Transfer"
     },
     {
       "id": "e4",
-      "source": "ACC001111",
-      "target": "ACC001234",
-      "amount": "680000000",
+      "source": "ACC002222",
+      "target": "ACC007777",
+      "amount": "6700000000",
       "timestamp": "13:45",
       "type": "Transfer"
     },
     {
       "id": "e5",
-      "source": "ACC007890",
-      "target": "ACC003456",
-      "amount": "95000000",
+      "source": "ACC004444",
+      "target": "ACC001234",
+      "amount": "6300000000",
       "timestamp": "13:20",
+      "type": "Transfer"
+    },
+    {
+      "id": "e6",
+      "source": "ACC006666",
+      "target": "ACC009999",
+      "amount": "6000000000",
+      "timestamp": "14:10",
+      "type": "Transfer"
+    },
+    {
+      "id": "e7",
+      "source": "ACC008888",
+      "target": "ACC007777",
+      "amount": "5700000000",
+      "timestamp": "13:55",
+      "type": "Deposit"
+    },
+    {
+      "id": "e8",
+      "source": "ACC001010",
+      "target": "ACC001234",
+      "amount": "5400000000",
+      "timestamp": "14:05",
+      "type": "Transfer"
+    },
+    {
+      "id": "e9",
+      "source": "ACC002020",
+      "target": "ACC009999",
+      "amount": "5100000000",
+      "timestamp": "13:40",
+      "type": "Transfer"
+    },
+    {
+      "id": "e10",
+      "source": "ACC003030",
+      "target": "ACC007777",
+      "amount": "4800000000",
+      "timestamp": "14:20",
+      "type": "Transfer"
+    },
+    {
+      "id": "e11",
+      "source": "ACC004040",
+      "target": "ACC001234",
+      "amount": "4500000000",
+      "timestamp": "13:30",
+      "type": "Transfer"
+    },
+    {
+      "id": "e12",
+      "source": "ACC005050",
+      "target": "ACC009999",
+      "amount": "4200000000",
+      "timestamp": "13:25",
+      "type": "Deposit"
+    },
+    {
+      "id": "e13",
+      "source": "ACC006060",
+      "target": "ACC007777",
+      "amount": "3900000000",
+      "timestamp": "13:15",
+      "type": "Transfer"
+    },
+    {
+      "id": "e14",
+      "source": "ACC007070",
+      "target": "ACC001234",
+      "amount": "3600000000",
+      "timestamp": "14:00",
+      "type": "Transfer"
+    },
+    {
+      "id": "e15",
+      "source": "ACC008080",
+      "target": "ACC009999",
+      "amount": "3300000000",
+      "timestamp": "13:50",
+      "type": "Transfer"
+    },
+    {
+      "id": "e16",
+      "source": "ACC009090",
+      "target": "ACC007777",
+      "amount": "3000000000",
+      "timestamp": "13:35",
+      "type": "Deposit"
+    },
+    {
+      "id": "e17",
+      "source": "ACC001122",
+      "target": "ACC001234",
+      "amount": "2700000000",
+      "timestamp": "14:12",
+      "type": "Transfer"
+    },
+    {
+      "id": "e18",
+      "source": "ACC002233",
+      "target": "ACC009999",
+      "amount": "2400000000",
+      "timestamp": "13:42",
+      "type": "Transfer"
+    },
+    {
+      "id": "e19",
+      "source": "ACC003344",
+      "target": "ACC007777",
+      "amount": "2100000000",
+      "timestamp": "14:18",
+      "type": "Transfer"
+    },
+    {
+      "id": "e20",
+      "source": "ACC004455",
+      "target": "ACC001234",
+      "amount": "1800000000",
+      "timestamp": "13:28",
+      "type": "Transfer"
+    },
+    {
+      "id": "e21",
+      "source": "ACC005566",
+      "target": "ACC009999",
+      "amount": "1500000000",
+      "timestamp": "13:38",
+      "type": "Deposit"
+    },
+    {
+      "id": "e22",
+      "source": "ACC006677",
+      "target": "ACC007777",
+      "amount": "1200000000",
+      "timestamp": "14:08",
+      "type": "Transfer"
+    },
+    {
+      "id": "e23",
+      "source": "ACC007788",
+      "target": "ACC001234",
+      "amount": "900000000",
+      "timestamp": "14:25",
+      "type": "Transfer"
+    },
+    {
+      "id": "e24",
+      "source": "ACC008899",
+      "target": "ACC009999",
+      "amount": "600000000",
+      "timestamp": "14:22",
+      "type": "Transfer"
+    },
+    {
+      "id": "e25",
+      "source": "ACC009900",
+      "target": "ACC007777",
+      "amount": "300000000",
+      "timestamp": "13:48",
+      "type": "Transfer"
+    },
+    {
+      "id": "e26",
+      "source": "ACC001001",
+      "target": "ACC005678",
+      "amount": "315000000",
+      "timestamp": "13:52",
+      "type": "Transfer"
+    },
+    {
+      "id": "e27",
+      "source": "ACC002002",
+      "target": "ACC009012",
+      "amount": "192000000",
+      "timestamp": "14:02",
+      "type": "Transfer"
+    },
+    {
+      "id": "e28",
+      "source": "ACC003003",
+      "target": "ACC001111",
+      "amount": "275000000",
+      "timestamp": "13:58",
+      "type": "Transfer"
+    },
+    {
+      "id": "e29",
+      "source": "ACC004004",
+      "target": "ACC002222",
+      "amount": "345000000",
+      "timestamp": "14:14",
+      "type": "Transfer"
+    },
+    {
+      "id": "e30",
+      "source": "ACC005005",
+      "target": "ACC004444",
+      "amount": "178000000",
+      "timestamp": "13:44",
+      "type": "Transfer"
+    },
+    {
+      "id": "e31",
+      "source": "ACC006006",
+      "target": "ACC006666",
+      "amount": "238000000",
+      "timestamp": "14:16",
+      "type": "Transfer"
+    },
+    {
+      "id": "e32",
+      "source": "ACC007007",
+      "target": "ACC008888",
+      "amount": "375000000",
+      "timestamp": "13:33",
+      "type": "Transfer"
+    },
+    {
+      "id": "e33",
+      "source": "ACC008008",
+      "target": "ACC001010",
+      "amount": "208000000",
+      "timestamp": "14:07",
+      "type": "Transfer"
+    },
+    {
+      "id": "e34",
+      "source": "ACC009009",
+      "target": "ACC002020",
+      "amount": "258000000",
+      "timestamp": "13:29",
+      "type": "Transfer"
+    },
+    {
+      "id": "e35",
+      "source": "ACC001100",
+      "target": "ACC003030",
+      "amount": "288000000",
+      "timestamp": "14:11",
+      "type": "Transfer"
+    },
+    {
+      "id": "e36",
+      "source": "ACC002200",
+      "target": "ACC004040",
+      "amount": "218000000",
+      "timestamp": "13:47",
+      "type": "Transfer"
+    },
+    {
+      "id": "e37",
+      "source": "ACC003300",
+      "target": "ACC005050",
+      "amount": "338000000",
+      "timestamp": "14:19",
+      "type": "Transfer"
+    },
+    {
+      "id": "e38",
+      "source": "ACC004400",
+      "target": "ACC006060",
+      "amount": "168000000",
+      "timestamp": "13:36",
+      "type": "Transfer"
+    },
+    {
+      "id": "e39",
+      "source": "ACC005500",
+      "target": "ACC007070",
+      "amount": "268000000",
+      "timestamp": "14:13",
+      "type": "Transfer"
+    },
+    {
+      "id": "e40",
+      "source": "ACC006600",
+      "target": "ACC008080",
+      "amount": "308000000",
+      "timestamp": "13:51",
+      "type": "Transfer"
+    },
+    {
+      "id": "e41",
+      "source": "ACC007700",
+      "target": "ACC009090",
+      "amount": "228000000",
+      "timestamp": "14:04",
+      "type": "Transfer"
+    },
+    {
+      "id": "e42",
+      "source": "ACC008800",
+      "target": "ACC001122",
+      "amount": "385000000",
+      "timestamp": "13:27",
+      "type": "Transfer"
+    },
+    {
+      "id": "e43",
+      "source": "ACC009911",
+      "target": "ACC002233",
+      "amount": "198000000",
+      "timestamp": "14:09",
+      "type": "Transfer"
+    },
+    {
+      "id": "e44",
+      "source": "ACC001212",
+      "target": "ACC003344",
+      "amount": "355000000",
+      "timestamp": "13:41",
+      "type": "Transfer"
+    },
+    {
+      "id": "e45",
+      "source": "ACC002323",
+      "target": "ACC004455",
+      "amount": "158000000",
+      "timestamp": "14:17",
+      "type": "Transfer"
+    },
+    {
+      "id": "e46",
+      "source": "ACC003434",
+      "target": "ACC005566",
+      "amount": "405000000",
+      "timestamp": "13:34",
+      "type": "Transfer"
+    },
+    {
+      "id": "e47",
+      "source": "ACC004545",
+      "target": "ACC006677",
+      "amount": "148000000",
+      "timestamp": "14:06",
+      "type": "Transfer"
+    },
+    {
+      "id": "e48",
+      "source": "ACC005656",
+      "target": "ACC007788",
+      "amount": "415000000",
+      "timestamp": "13:26",
+      "type": "Transfer"
+    },
+    {
+      "id": "e49",
+      "source": "ACC006767",
+      "target": "ACC008899",
+      "amount": "138000000",
+      "timestamp": "14:21",
+      "type": "Transfer"
+    },
+    {
+      "id": "e50",
+      "source": "ACC007878",
+      "target": "ACC009900",
+      "amount": "395000000",
+      "timestamp": "13:39",
       "type": "Transfer"
     }
   ]
